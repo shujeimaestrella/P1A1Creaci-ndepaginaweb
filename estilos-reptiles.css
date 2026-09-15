@@ -1,0 +1,135 @@
+/* Variables de colores verdes */
+:root {
+    --verde-oscuro: #1b4332;
+    --verde-principal: #2d6a4f;
+    --verde-claro: #52b788;
+    --verde-brillante: #74c69d;
+    --verde-fondo: #f0f7f4;
+    --texto: #2b2d42;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--verde-fondo);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+header a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portada {
+    background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-principal));
+    color: var(--blanco);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.portada h1 span {
+    color: var(--verde-brillante);
+}
+
+.subtitulo {
+    color: var(--verde-brillante);
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: var(--verde-brillante);
+}
+
+.introduccion {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+}
+
+.contenedor-animales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 320px;
+    border-top: 4px solid var(--verde-principal);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 1.5rem;
+}
+
+.contenido h3 {
+    color: var(--verde-oscuro);
+    margin-top: 0;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.informacion div {
+    display: flex;
+    flex-direction: column;
+}
+
+.regresar {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #d8f3dc;
+    margin-top: 3rem;
+}
+
+footer {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.footer-secundario {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
