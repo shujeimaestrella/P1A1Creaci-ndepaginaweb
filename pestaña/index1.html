@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Animal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f9;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        header {
+            background-color: #176b87;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Inicio */
+        .inicio {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #dff6f0;
+        }
+
+        .inicio h2 {
+            font-size: 40px;
+            color: #176b87;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Categorías */
+        .categorias {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .categorias h2 {
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #176b87;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta .emoji {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #176b87;
+        }
+
+        .tarjeta p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #176b87;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background-color: #0d4f65;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #176b87;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>🌎 Mundo Animal</h1>
+
+        <nav>
+            <a href="index1.html">Inicio</a>
+            <a href="#">Marítimos</a>
+            <a href="index.html">Terrestres</a>
+            <a href="#">Aire</a>
+        </nav>
+    </header>
+
+    <!-- Presentación -->
+    <section class="inicio">
+        <h2>Bienvenido a Mundo Animal 🐾</h2>
+
+        <p>
+            Descubre la increíble diversidad de animales que habitan
+            nuestro planeta. Conoce animales marítimos, terrestres y
+            aquellos que dominan los cielos.
+        </p>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categorias">
+
+        <h2>Conoce nuestros animales</h2>
+
+        <div class="contenedor">
+
+            <!-- Animales marítimos -->
+            <div class="tarjeta">
+                <div class="emoji">🐬</div>
+
+                <h3>Animales Marítimos</h3>
+
+                <p>
+                    Descubre los animales que viven en mares y océanos,
+                    como delfines, tiburones, ballenas y tortugas.
+                </p>
+
+                <a href="#" class="boton">Ver animales</a>
+            </div>
+
+            <!-- Animales terrestres -->
+            <div class="tarjeta">
+                <div class="emoji">🦁</div>
+
+                <h3>Animales Terrestres</h3>
+
+                <p>
+                    Conoce animales que viven en la tierra, como
+                    leones, elefantes, tigres y osos.
+                </p>
+
+                <!-- ENLACE CORREGIDO AQUÍ -->
+                <a href="index.html" class="boton">Ver animales</a>
+            </div>
+
+            <!-- Animales de aire -->
+            <div class="tarjeta">
+                <div class="emoji">🦅</div>
+
+                <h3>Animales de Aire</h3>
+
+                <p>
+                    Explora los animales que vuelan por los cielos,
+                    como águilas, halcones, búhos y mariposas.
+                </p>
+
+                <a href="#" class="boton">Ver animales</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mundo Animal | Conoce y respeta la vida animal 🐾</p>
+    </footer>
+
+</body>
+
+</html>
